@@ -1,13 +1,3 @@
-TERMUX_PKG_HOMEPAGE=https://developer.android.com/tools/sdk/ndk/index.html
-TERMUX_PKG_DESCRIPTION="System header and library files from the Android NDK needed for compiling C programs"
-TERMUX_PKG_LICENSE="NCSA"
-TERMUX_PKG_VERSION=$TERMUX_NDK_VERSION
-TERMUX_PKG_REVISION=8
-TERMUX_PKG_SKIP_SRC_EXTRACT=true
-TERMUX_PKG_CONFLICTS="libutil-dev, libgcc, libandroid-support-dev"
-TERMUX_PKG_REPLACES="libutil-dev, libgcc, libandroid-support-dev, ndk-stl"
-TERMUX_PKG_NO_STATICSPLIT=true
-
 termux_step_extract_into_massagedir() {
 	mkdir -p $TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX/lib \
 		$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX/include
